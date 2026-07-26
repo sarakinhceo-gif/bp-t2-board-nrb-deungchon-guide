@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 — 서울 주요 업종별 투명한 예산 가이드라인</title>
+    <meta name="description" content="서울 지역 12개 주요 업종의 가격 구조를 투명하게 분석하는 독립형 정보 블로그의 운영 철학과 전문성 분석 프레임워크를 소개합니다.">
+    <meta name="keywords" content="유흥 가격 비교, 서울 유흥 가격, 업종별 가격 비교, 셔츠룸 가격, 룸싸롱 가격, 텐프로 예산">
+    <link rel="canonical" href="https://board.nrb-deungchon-guide.xyz/about.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="소개 — 서울 주요 업종별 투명한 예산 가이드라인">
+    <meta property="og:description" content="서울 지역 12개 주요 업종의 가격 구조를 투명하게 분석하는 독립형 정보 블로그의 운영 철학과 전문성 분석 프레임워크를 소개합니다.">
+    <meta property="og:url" content="https://board.nrb-deungchon-guide.xyz/about.html">
+    <style>
+        /* CSS Reset & Variables */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-color: #0b0b0b;
+            --secondary-color: #121212;
+            --accent-color: #c5a880; /* Gold Accent */
+            --text-main: #ffffff;
+            --text-muted: #8e8e93;
+            --border-color: #222222;
+            --max-width: 1200px;
+            --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            --font-serif: 'Playfair Display', 'Noto Serif KR', serif;
+        }
+        body {
+            background-color: var(--primary-color);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        /* Layout Structure */
+        .t-body-iy01 {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Header Navigation */
+        .q-top-3y6d {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(11, 11, 11, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-color);
+        }
+        /* Mobile Hamburger */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .menu-toggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: var(--text-main);
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        /* Main Content */
+        main {
+            flex: 1;
+            margin-top: 70px;
+        }
+        /* Hero Section */
+        .hero-section {
+            padding: 8rem 2rem 5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero-tag {
+            font-family: var(--font-serif);
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 2rem;
+            display: block;
+        }
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.25;
+            letter-spacing: -1.5px;
+            margin-bottom: 2.5rem;
+        }
+        .hero-title span {
+            color: var(--accent-color);
+        }
+        .hero-desc {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.9;
+        }
+        /* Editorial Section */
+        .editorial-section {
+            padding: 7rem 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1.12fr 1.88fr;
+            gap: 5rem;
+            align-items: start;
+        }
+        .sticky-sidebar {
+            position: sticky;
+            top: 120px;
+        }
+        .section-label {
+            font-family: var(--font-serif);
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1.2rem;
+            display: block;
+        }
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+        .editorial-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        .editorial-content p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.95;
+        }
+        .editorial-content p strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+        /* Highlight Quote Block */
+        .quote-block {
+            border-left: 2px solid var(--accent-color);
+            padding-left: 2.5rem;
+            margin: 3.5rem 0;
+        }
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--text-main);
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+        .quote-author {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        /* Feature Cards (Visual Rhythm variation) */
+        .features-section {
+            background-color: var(--secondary-color);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 7rem 2rem;
+        }
+        .features-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .features-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+        .feature-card {
+            background-color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            padding: 3.5rem 2.5rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+        .card-num {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: rgba(197, 168, 128, 0.25);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            display: block;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+        .card-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        /* Footer */
+        .k-foot-j3fs {
+            background-color: #050505;
+            border-top: 1px solid var(--border-color);
+            padding: 5rem 2rem 4rem;
+            margin-top: auto;
+        }
+        .footer-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        .footer-info {
+            max-width: 450px;
+        }
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: block;
+            letter-spacing: 1px;
+        }
+        .footer-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .footer-links {
+            display: flex;
+            gap: 5rem;
+        }
+        .footer-col h4 {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 1rem;
+        }
+        .footer-col ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+        .footer-bottom {
+            max-width: var(--max-width);
+            margin: 4rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid #151515;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+        /* Mobile Navigation Drawer */
+        .m-side-awlk-wrapper {
+            display: none;
+        }
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .editorial-grid {
+                grid-template-columns: 1fr;
+                gap: 3.5rem;
+            }
+            .sticky-sidebar {
+                position: static;
+            }
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-title {
+                font-size: 2.2rem;
+                margin-bottom: 1.8rem;
+            }
+            .hero-desc {
+                font-size: 1rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .footer-container {
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+            .footer-links {
+                width: 100%;
+                justify-content: space-between;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="t-body-iy01">
+
+    <!-- Header Navigation -->
+    <header class="q-top-3y6d">
+        <div class="nav-container">
+            <a href="https://board.nrb-deungchon-guide.xyz" class="logo">ANALYSIS</a>
+            <nav class="nav-links">
+                <a href="https://board.nrb-deungchon-guide.xyz">홈</a>
+                <a href="https://board.nrb-deungchon-guide.xyz/comparison.html">가격 비교 분석</a>
+                <a href="https://board.nrb-deungchon-guide.xyz/about.html" class="active">소개</a>
+                <a href="https://board.nrb-deungchon-guide.xyz/guide.html">이용 가이드</a>
+            </nav>
+            <button class="menu-toggle" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        section class="hero-section">
+            <span class="hero-tag">Our Manifesto</span>
+            <h1 class="hero-title">보이지 않는 구조를 <span>투명하게</span> 해체합니다</h1>
+            <p class="hero-desc">
+                정보의 비대칭성은 시장을 왜곡하고, 왜곡된 시장 속에서 최종 소비자는 언제나 불필요한 비용을 지불하게 됩니다. 본 블로그는 서울 내 주요 12개 업종의 복잡한 비용 체계를 객관적으로 비교 분석하기 위해 설립된 독립형 정보 플랫폼입니다.
+            </p>
+        </section>
+
+        <!-- Editorial Section -->
+        <section class="editorial-section">
+            <div class="editorial-grid">
+                <!-- Left Sticky Sidebar -->
+                <div class="sticky-sidebar">
+                    <span class="section-label">01 / Philosophy</span>
+                    <h2 class="section-title">왜 유흥 시장의 가격 정보는 투명하지 않은가?</h2>
+                </div>
+                <!-- Right Content -->
+                <div class="editorial-content">
+                    <p>
+                        소비자가 합리적인 결정을 내리기 위해 가장 먼저 요구되는 것은 <strong>정확한 비교 기준</strong>입니다. 그러나 서울의 수많은 유흥 업종(셔츠룸, 룸싸롱, 텐프로, 텐카페, 마사지 등)은 기형적인 가격 책정 체계와 암묵적인 룰 뒤에 숨어 소비자의 판단을 흐리게 만듭니다. 
+                    </p>
+                    <p>
+                        중개인이나 업소의 이해관계에 얽매인 왜곡된 정보들은 소비자들로 하여금 기준점을 잡지 못하게 방해합니다. 우리는 이러한 정보 독점과 은폐를 지양합니다. 제휴나 광고 중심의 일방적인 추천에서 벗어나, <strong>비용 구조 자체를 수학적이고 논리적으로 쪼개어 설명하는 것</strong>이 우리의 궁극적인 목표입니다.
+                    </p>
+
+                    <div class="quote-block">
+                        <p class="quote-text">"가장 투명한 기준만이 합리적인 소비를 만듭니다."</p>
+                        <p class="quote-author">Analysis & Research Team</p>
+                    </div>
+
+                    <p>
+                        본 플랫폼은 단순한 업소 소개나 예약을 주선하지 않습니다. 정찰제가 확립되지 않은 고가 소비 영역에서 소비자가 마주할 수 있는 비정상적인 청구액과 과장 광고의 실체를 객관적인 비용 시뮬레이션 데이터로 규명하고자 합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (Visual Rhythm variation) -->
+        <section class="features-section">
+            <div class="features-container">
+                <div class="features-header">
+                    <span class="section-label">02 / Methodology</span>
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-top: 1rem;">우리가 정보를 다루는 세 가지 원칙</h2>
+                </div>
+                <div class="features-grid">
+                    <!-- Card 1 -->
+                    <div class="feature-card">
+                        <span class="card-num">I</span>
+                        <h3 class="card-title">독립성과 비타협성</h3>
+                        <p class="card-desc">특정 프랜차이즈나 업소의 광고성 후원을 전면 차단합니다. 자본의 개입이 없는 철저히 독립적인 시각에서만 시장의 가격 구조를 냉정하게 평가합니다.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="feature-card">
+                        <span class="card-num">II</span>
+                        <h3 class="card-title">데이터 기반의 구조 분석</h3>
+                        <p class="card-desc">기본 룸차지, 시간당 봉사료, 주류 원가 및 세금 구조 등 가격을 구성하는 핵심 변수들을 분해하여 객관적인 수식적 가이드라인을 도출합니다.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="feature-card">
+                        <span class="card-num">III</span>
+                        <h3 class="card-title">업종별 경계의 구분</h3>
+                        <p class="card-desc">모호하게 섞여 있는 12개 주요 업종의 서비스적 성격과 시스템적 차이를 정확히 구분하여, 각 세부 카테고리에 맞는 전용 예산 범위를 정밀 분석합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editorial Section 2 (Direct Address) -->
+        <section class="editorial-section" style="padding-top: 5rem;">
+            <div class="editorial-grid">
+                <div class="sticky-sidebar">
+                    <span class="section-label">03 / Disclaimer</span>
+                    <h2 class="section-title">소비자의 권리는 알 권리로부터 시작됩니다</h2>
+                </div>
+                <div class="editorial-content">
+                    <p>
+                        많은 이들이 시장 가격에 의문을 제기하면서도, 마땅한 대조군이 없어 관행적인 청구 금액을 그대로 받아들입니다. 우리는 이러한 악순환을 깨고자 합니다. <strong>어떠한 마케팅적 미사여구도 배제한 채</strong> 오직 정량화된 가치와 비용의 균형점만을 추적합니다.
+                    </p>
+                    <p>
+                        우리는 불법적인 예약을 대행하거나 사행성 거래를 조장하지 않습니다. 오직 시장에 존재하는 현상을 냉철하게 관찰하고, 소비자가 예상치 못한 과대 청구의 피해자가 되지 않도록 돕는 <strong>강력한 정보망</strong>으로서 기능할 것입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="k-foot-j3fs">
+        <div class="footer-container">
+            <div class="footer-info">
+                <span class="footer-logo">ANALYSIS</span>
+                <p class="footer-text">
+                    본 블로그는 서울 주요 업종별 가격 구조와 예산 범위를 객관적인 지표를 바탕으로 분석하는 독립형 정보 플랫폼입니다. 당사는 어떠한 업소와도 제휴를 맺지 않으며, 불법적인 거래나 예약을 알선하지 않습니다.
+                </p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>컨텐츠</h4>
+                    <ul>
+                        <li><a href="https://board.nrb-deungchon-guide.xyz">홈으로</a></li>
+                        <li><a href="https://board.nrb-deungchon-guide.xyz/comparison.html">가격 비교 분석</a></li>
+                        <li><a href="https://board.nrb-deungchon-guide.xyz/guide.html">이용 가이드</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>소개 및 철학</h4>
+                    <ul>
+                        <li><a href="https://board.nrb-deungchon-guide.xyz/about.html">운영 원칙</a></li>
+                        <li><a href="https://board.nrb-deungchon-guide.xyz/about.html">데이터 분석 기준</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2024 ANALYSIS. All rights reserved.</span>
+            <span>독립형 가격 비교 및 예산 분석 가이드라인</span>
+        </div>
+    </footer>
+
+</body>
+</html>

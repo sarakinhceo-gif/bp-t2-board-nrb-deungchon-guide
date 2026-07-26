@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가이드 — 서울 주요 업종별 투명한 예산 가이드라인</title>
+    <meta name="description" content="서울 지역의 셔츠룸, 룸싸롱, 텐프로, 텐카페, 마사지 등 12개 주요 업종의 객관적인 가격 구조와 예산 범위를 투명하게 비교 분석하는 독립형 정보 블로그입니다.">
+    <meta name="keywords" content="유흥 가격 비교, 서울 유흥 가격, 업종별 가격 비교, 셔츠룸 가격, 룸싸롱 가격, 텐프로 예산">
+    <link rel="canonical" href="https://board.nrb-deungchon-guide.xyz/blog-1.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 가격 비교 — 서울 주요 업종별 투명한 예산 가이드라인">
+    <meta property="og:description" content="서울 지역의 12개 주요 업종의 객관적인 가격 구조와 예산 범위를 투명하게 비교 분석합니다.">
+    <meta property="og:url" content="https://board.nrb-deungchon-guide.xyz/blog-1.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-bg: #0a0a0a;
+            --color-surface: #121212;
+            --color-surface-hover: #1a1a1a;
+            --color-border: #262626;
+            --color-border-bright: #404040;
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #a3a3a3;
+            --color-accent: #c5a880; /* Editorial Gold */
+            --color-accent-hover: #e0cda9;
+            --font-editorial: 'Cinzel', serif;
+            --font-sans: 'Noto Sans KR', sans-serif;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            letter-spacing: -0.02em;
+            overflow-x: hidden;
+        }
+
+        /* Layout Structure */
+        .t-body-iy01 {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Header Navigation */
+        .q-top-3y6d {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: rgba(10, 10, 10, 0.95);
+            border-bottom: 1px solid var(--color-border);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo {
+            font-family: var(--font-editorial);
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--color-text-primary);
+            text-decoration: none;
+            transition: color var(--transition-speed);
+        }
+
+        .brand-logo span {
+            color: var(--color-accent);
+        }
+
+        .brand-logo:hover {
+            color: var(--color-accent);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            transition: color var(--transition-speed);
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--color-accent);
+        }
+
+        /* Hamburger Menu (Responsive 768) */
+        .hamburger-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 110;
+        }
+
+        .hamburger-btn span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--color-text-primary);
+            margin: 5px 0;
+            transition: var(--transition-speed);
+        }
+
+        .m-side-awlk-wrapper {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background-color: var(--color-surface);
+            border-left: 1px solid var(--color-border);
+            z-index: 105;
+            padding: 6rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            transition: right var(--transition-speed) cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        .m-side-awlk-wrapper.active {
+            right: 0;
+        }
+
+        .m-side-link {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 0.8rem;
+            transition: color var(--transition-speed);
+        }
+
+        .m-side-link:hover {
+            color: var(--color-accent);
+        }
+
+        /* Hero Section - Editorial Luxury Style */
+        .hero-editorial {
+            padding: 12rem 2rem 6rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .editorial-label {
+            font-family: var(--font-editorial);
+            color: var(--color-accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .editorial-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: -0.04em;
+        }
+
+        .editorial-title span {
+            font-family: var(--font-editorial);
+            font-style: italic;
+            font-weight: 400;
+            color: var(--color-accent);
+        }
+
+        .editorial-lead {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--color-text-secondary);
+            max-width: 800px;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        /* Main Content Grid */
+        .content-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 4rem;
+        }
+
+        /* Sidebar Index */
+        .editorial-sidebar {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .sidebar-title {
+            font-family: var(--font-editorial);
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            color: var(--color-accent);
+            text-transform: uppercase;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .sidebar-item a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color var(--transition-speed);
+            display: block;
+            border-left: 1px solid var(--color-border);
+            padding-left: 1rem;
+        }
+
+        .sidebar-item a:hover, .sidebar-item.active a {
+            color: var(--color-accent);
+            border-left-color: var(--color-accent);
+        }
+
+        /* Longform Article */
+        .editorial-article {
+            max-width: 850px;
+        }
+
+        .article-section {
+            margin-bottom: 6rem;
+        }
+
+        .article-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-num {
+            font-family: var(--font-editorial);
+            color: var(--color-accent);
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: -0.03em;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 1rem;
+        }
+
+        .section-text {
+            color: var(--color-text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .section-textstrong {
+            color: var(--color-text-primary);
+            font-weight: 500;
+        }
+
+        /* Bold Callout Box */
+        .editorial-callout {
+            background-color: var(--color-surface);
+            border-left: 3px solid var(--color-accent);
+            padding: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .callout-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--color-accent);
+        }
+
+        .callout-desc {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Data Matrix Table */
+        .matrix-table-wrapper {
+            overflow-x: auto;
+            margin: 2.5rem 0;
+            border: 1px solid var(--color-border);
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .matrix-table th, .matrix-table td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .matrix-table th {
+            background-color: var(--color-surface);
+            font-family: var(--font-editorial);
+            color: var(--color-accent);
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .matrix-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .matrix-table tr:hover td {
+            background-color: rgba(197, 168, 128, 0.03);
+        }
+
+        /* Accordion FAQ */
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            border: 1px solid var(--color-border);
+            background-color: var(--color-surface);
+        }
+
+        .faq-trigger {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            padding: 1.5rem;
+            color: var(--color-text-primary);
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-trigger::after {
+            content: '+';
+            font-family: var(--font-editorial);
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            transition: transform var(--transition-speed);
+        }
+
+        .faq-item.active .faq-trigger::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-content {
+            display: block;
+        }
+
+        /* Footer Section */
+        .k-foot-j3fs {
+            background-color: #050505;
+            border-top: 1px solid var(--color-border);
+            padding: 4rem 2rem;
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+        }
+
+        .footer-info h4 {
+            font-family: var(--font-editorial);
+            font-size: 1.2rem;
+            color: var(--color-text-primary);
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-info p {
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            align-items: flex-end;
+        }
+
+        .footer-links a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-speed);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 3rem auto 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .content-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .editorial-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hamburger-btn {
+                display: block;
+            }
+
+            .hero-editorial {
+                padding: 10rem 1.5rem 4rem;
+            }
+
+            .content-container {
+                padding: 4rem 1.5rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-links {
+                align-items: flex-start;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="t-body-iy01">
+
+    <!-- Header Navigation -->
+    <header class="q-top-3y6d">
+        <div class="nav-container">
+            <a href="https://board.nrb-deungchon-guide.xyz" class="brand-logo">SEOUL<span>INSIGHT</span></a>
+            <nav class="nav-menu">
+                <a href="https://board.nrb-deungchon-guide.xyz" class="nav-link">홈</a>
+                <a href="#" class="nav-link active">가이드</a>
+                <a href="#matrix" class="nav-link">업종별 분석</a>
+                <a href="#methodology" class="nav-link">조사 방법론</a>
+                <a href="#faq" class="nav-link">자주 묻는 질문</a>
+            </nav>
+            <button class="hamburger-btn" id="hamburgerToggle" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Sidebar -->
+    <div class="m-side-awlk-wrapper" id="mobileMenu">
+        <a href="https://board.nrb-deungchon-guide.xyz" class="m-side-link">홈</a>
+        <a href="#" class="m-side-link">가이드</a>
+        <a href="#matrix" class="m-side-link">업종별 분석</a>
+        <a href="#methodology" class="m-side-link">조사 방법론</a>
+        <a href="#faq" class="m-side-link">자주 묻는 질문</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-editorial">
+            <span class="editorial-label">In-Depth Market Report</span>
+            <h1 class="editorial-title">
+                서울 유흥 가격 비교의 <span>불편한 진실</span>과 객관적 예산 가이드라인
+            </h1>
+            <p class="editorial-lead">
+                정보의 비대칭성이 지배하는 시장에서 가장 합리적인 소비 기준을 제시합니다. 12개 주요 업종의 구조적 비용 분석과 예산 초과 방지를 위한 독립형 가이드북.
+            </p>
+        </section>
+
+        <!-- Content Grid -->
+        <div class="content-container">
+            <!-- Sidebar Index -->
+            <aside class="editorial-sidebar">
+                <h3 class="sidebar-title">목차</h3>
+                <ul class="sidebar-list">
+                    <li class="sidebar-item active"><a href="#intro">01. 불투명성의 극복</a></li>
+                    <li class="sidebar-item"><a href="#matrix">02. 12개 업종 비교 매트릭스</a></li>
+                    <li class="sidebar-item"><a href="#structure">03. 비용 발생의 구조적 요인</a></li>
+                    <li class="sidebar-item"><a href="#methodology">04. 올바른 예산 설계 원칙</a></li>
+                    <li class="sidebar-item"><a href="#faq">05. FAQ</a></li>
+                </ul>
+            </aside>
+
+            <!-- Longform Article -->
+            <article class="editorial-article">
+                
+                <!-- Section 01 -->
+                <section id="intro" class="article-section">
+                    <span class="section-num">01</span>
+                    <h2 class="section-title">불투명성의 극복: 왜 가격 비교가 필요한가</h2>
+                    <p class="section-text">
+                        서울의 엔터테인먼트 및 유흥 시장은 오랜 기간 정보의 폐쇄성 속에서 운영되어 왔습니다. 정찰제가 확립되지 않은 산업의 특성상, 소비자는 동일한 서비스를 제공받으면서도 제공처와 중개 방식에 따라 상이한 비용을 지불하는 구조적 모순에 직면해 있습니다.
+                    </p>
+                    <p class="section-text">
+                        이러한 정보 비대칭성은 소비자의 합리적인 예산 설계를 가로막는 가장 큰 장애물입니다. 본 가이드는 특정 업체를 홍보하거나 유도하는 목적을 철저히 배제하고, 오직 서울 주요 지역의 시장 데이터를 기반으로 한 <span class="section-textstrong">객관적인 가격 비교 기준</span>을 정립하기 위해 작성되었습니다.
+                    </p>
+                    <div class="editorial-callout">
+                        <div class="callout-title">독립적 정보 제공의 가치</div>
+                        <div class="callout-desc">본 블로그는 광고 대행사나 업소의 후원을 받지 않으며, 오직 객관적인 지표와 시장 조사 결과만을 공유합니다.</div>
+                    </div>
+                </section>
+
+                <!-- Section 02 -->
+                <section id="matrix" class="article-section">
+                    <span class="section-num">02</span>
+                    <h2 class="section-title">12개 업종 비교 매트릭스 및 가격 분포</h2>
+                    <p class="section-text">
+                        서울 지역에서 소비자가 이용할 수 있는 주요 12개 업종의 대략적인 예산 분포와 구조적 특징을 비교 분석합니다. 아래 매트릭스는 단순 최저가가 아닌, 실제 이용 시 예상할 수 있는 표준 예산 범위를 나타냅니다.
+                    </p>
+
+                    <div class="matrix-table-wrapper">
+                        <table class="matrix-table">
+                            <thead>
+                                <tr>
+                                    <th>업종 구분</th>
+                                    <th>기본 예산 범위</th>
+                                    <th>비용 결정 요인</th>
+                                    <th>정보 투명성</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>하이엔드 클럽 / 텐프로</td>
+                                    <td>최상위 등급 (고가)</td>
+                                    <td>시간당 요금 및 지정제</td>
+                                    <td>매우 낮음</td>
+                                </tr>
+                                <tr>
+                                    <td>퍼블릭 룸 / 셔츠룸</td>
+                                    <td>중급 수준 (표준형)</td>
+                                    <td>세트 메뉴 및 시간 연장</td>
+                                    <td>보통</td>
+                                </tr>
+                                <tr>
+                                    <td>가라오케 / 텐카페</td>
+                                    <td>중상위 등급</td>
+                                    <td>주류 구성 및 룸 타임</td>
+                                    <td>낮음</td>
+                                </tr>
+                                <tr>
+                                    <td>테라피 / 마사지 샵</td>
+                                    <td>정찰제 기반</td>
+                                    <td>코스 시간 및 프로그램</td>
+                                    <td>높음</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="section-text">
+                        위 표에서 알 수 있듯이, 정보의 투명성이 낮은 업종일수록 현장에서 발생하는 추가 비용의 편차가 큽니다. 따라서 사전 예산 계획 수립이 필수적입니다.
+                    </p>
+                </section>
+
+                <!-- Section 03 -->
+                <section id="structure" class="article-section">
+                    <span class="section-num">03</span>
+                    <h2 class="section-title">비용 발생의 구조적 요인: 보이지 않는 지출</h2>
+                    <p class="section-text">
+                        소비자가 예상하지 못한 예산 초과가 발생하는 원인은 크게 세 가지 '보이지 않는 비용'에서 기인합니다. 첫째는 <span class="section-textstrong">봉사료 및 세금(VAT)</span>의 이중 부과 구조이며, 둘째는 시간 경과에 따른 누적 비용, 셋째는 기본 세트 외의 추가 주문 요금입니다.
+                    </p>
+                    <p class="section-text">
+                        대부분의 플랫폼이나 커뮤니티에서는 미끼성 최저 가격만을 제시하지만, 실제 현장에서 영수증에 표기되는 최종 금액은 초기 안내 금액과 상이한 경우가 허다합니다. 이는 업계의 고질적인 관행으로, 이용 전 반드시 총액(All-inclusive) 기준을 명확히 확인하는 절차가 요구됩니다.
+                    </p>
+                </section>
+
+                <!-- Section 04 -->
+                <section id="methodology" class="article-section">
+                    <span class="section-num">04</span>
+                    <h2 class="section-title">올바른 예산 설계 원칙: 현명한 소비를 위한 3계명</h2>
+                    <p class="section-text">
+                        불투명한 시장 환경 속에서 자신의 재정적 한계를 지키며 안전하게 서비스를 이용하기 위해서는 다음과 같은 엄격한 원칙을 준수해야 합니다.
+                    </p>
+                    <p class="section-text">
+                        <strong>1. 총액 우선 확인의 원칙:</strong> 서비스 시작 전, 세금과 봉사료를 포함한 최종 결제 금액을 반드시 구두 혹은 서면으로 확답 받아야 합니다.
+                    </p>
+                    <p class="section-text">
+                        <strong>2. 추가 옵션의 거부:</strong> 현장에서 즉흥적으로 제안되는 추가 코스나 주류 변경은 예산 초과의 주범입니다. 계획된 범위 외의 제안은 단호히 거절하는 태도가 필요합니다.
+                    </p>
+                    <p class="section-text">
+                        <strong>3. 기록의 생활화:</strong> 결제 영수증은 즉시 수령하여 세부 내역이 사전 합의된 내용과 일치하는지 대조해 보아야 합니다.
+                    </p>
+                </section>
+
+                <!-- Section 05: FAQ -->
+                <section id="faq" class="article-section">
+                    <span class="section-num">05</span>
+                    <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+                    
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-trigger">인터넷에 공개된 최저가 정보는 신뢰할 수 있습니까?</button>
+                            <div class="faq-content">
+                                대부분의 인터넷 광고성 최저가는 기본 입장료나 최소 조건만을 제시한 미끼 상품일 확률이 높습니다. 실제 이용 시에는 봉사료, 주류 추가, 테이블 비용 등이 가산되므로 이를 감안한 종합 예산 설계가 필요합니다.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-trigger">업종별 가격 차이가 발생하는 가장 큰 이유는 무엇인가요?</button>
+                            <div class="faq-content">
+                                인적 자원의 등급, 인테리어 및 시설 투자 규모, 그리고 독점성 여부에 따라 가격이 결정됩니다. 고급화된 서비스일수록 시간 대비 지출 비용이 기하급수적으로 증가하는 경향을 보입니다.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-trigger">예상치 못한 과다 청구가 발생했을 때의 대처법은?</button>
+                            <div class="faq-content">
+                                결제 전 반드시 세부 명세서를 요구하여 항목별 단가를 대조해야 합니다. 사전 합의되지 않은 항목에 대해서는 즉각적인 이의 제기가 유일하고 가장 효과적인 해결책입니다.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="k-foot-j3fs">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>SEOUL INSIGHT</h4>
+                <p>
+                    본 사이트는 서울 지역 엔터테인먼트 및 유흥 산업의 가격 구조를 투명하게 분석하고 소비자의 합리적인 예산 수립을 돕기 위해 운영되는 독립형 정보 블로그입니다. 어떠한 업소와도 제휴를 맺지 않으며 객관적 데이터만을 다룹니다.
+                </p>
+                <span>© 2024 SEOUL INSIGHT. All Rights Reserved.</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://board.nrb-deungchon-guide.xyz">메인 페이지</a>
+                <a href="#intro">불투명성의 극복</a>
+                <a href="#matrix">업종별 분석</a>
+                <a href="#methodology">가이드라인</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>독립형 가격 비교 분석 플랫폼</span>
+            <span>Contact: info@board.nrb-deungchon-guide.xyz</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Hamburger Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburgerToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            hamburgerBtn.classList.toggle('active');
+        });
+
+        // Close Mobile Menu on Link Click
+        const mobileLinks = document.querySelectorAll('.m-side-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                hamburgerBtn.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const trigger = item.querySelector('.faq-trigger');
+            trigger.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items
+                faqItems.forEach(i => i.classList.remove('active'));
+                
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Sticky Sidebar Highlight on Scroll
+        const sections = document.querySelectorAll('.article-section');
+        const sidebarItems = document.querySelectorAll('.sidebar-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            sidebarItems.forEach(item => {
+                item.classList.remove('active');
+                const linkHref = item.querySelector('a').getAttribute('href').substring(1);
+                if (linkHref === current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
