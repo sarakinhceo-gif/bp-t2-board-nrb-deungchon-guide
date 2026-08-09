@@ -26,12 +26,22 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://board.nrb-deungchon-guide.xyz/posts/field_note-003-1y0tp2s.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://board.nrb-deungchon-guide.xyz/posts/field_note-004-25uxxi.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://board.nrb-deungchon-guide.xyz/posts/field_note-005-1lof6q9.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://board.nrb-deungchon-guide.xyz/posts/guide-002-10jkskv.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -51,7 +61,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://board.nrb-deungchon-guide.xyz/posts/major_compare-004-913296.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://board.nrb-deungchon-guide.xyz/posts/major_compare-005-i4cv8p.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://board.nrb-deungchon-guide.xyz/posts/myth-001-9fqwsc.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -72,6 +92,11 @@
   </url>
   <url>
     <loc>https://board.nrb-deungchon-guide.xyz/posts/qa-002-9zxcmi.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://board.nrb-deungchon-guide.xyz/posts/qa-005-2juzap.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
